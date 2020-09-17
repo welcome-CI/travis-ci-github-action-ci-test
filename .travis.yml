@@ -1,3 +1,4 @@
+os: linux
 dist: bionic
 language: ruby
 cache:
@@ -13,4 +14,4 @@ before_script:
   - bundle exec rake db:create
   - bundle exec rake db:schema:load
 script:
-  - bundle exec rake test
+  - bundle exec rspec
