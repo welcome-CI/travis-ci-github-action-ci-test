@@ -1,24 +1,27 @@
-# README
+# Rails app for testing Travis-CI and GitHub Action settings
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Build Status](https://travis-ci.com/jasonj27/github-heroku-test.svg?branch=master)](https://travis-ci.com/jasonj27/github-heroku-test)
+![RSpec](https://github.com/jasonj27/travis-ci-github-action-ci-test/workflows/RSpec/badge.svg)
 
-Things you may want to cover:
+Simple rails 6 app with rspec, postgres, and webpacker
 
-* Ruby version
+Contains 1 generated scaffold
 
-* System dependencies
+Page style using Bootstrap
 
-* Configuration
+* Ruby 2.7.1
 
-* Database creation
+* Rails 6.0.3.3
 
-* Database initialization
+* PostgreSQL
 
-* How to run the test suite
+* RSpec for Rails
 
-* Services (job queues, cache servers, search engines, etc.)
+* [Travis-CI config file](./.travis.yml)
 
-* Deployment instructions
+* [Github Action config file](./.github/workflows/ci.yml)
 
-* ...
+## Usage demo
+* Clone this repo, then push to your own github repo
+* In your repo Actions page, a workflow called RSpec sholud run automatically
+* If you sync your travis-ci account and github account, a travis-ci build test should run as well
