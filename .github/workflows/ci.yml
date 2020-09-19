@@ -22,6 +22,10 @@ jobs:
       uses: ruby/setup-ruby@v1
       # with:
       #   ruby-version: 2.7.1 # Not needed with a .ruby-version file
+    - name: Setup Node # delete this step will use node v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
     - name: Cache gems
       uses: actions/cache@v2
       with:
