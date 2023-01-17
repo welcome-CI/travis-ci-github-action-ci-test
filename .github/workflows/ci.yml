@@ -43,7 +43,8 @@ jobs:
     - name: Install dependencies
       run: |
         gem install bundler
-        bundle install --path vendor/bundle --without production
+        bundle config set path vendor/bundle
+        bundle install
         yarn install
     - name: Set env
       run: |
