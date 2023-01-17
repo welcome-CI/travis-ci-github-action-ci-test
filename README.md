@@ -24,4 +24,4 @@ Page style using Bootstrap
 ## Usage demo
 * Clone this repo, then push to your own github repo
 * In your repo Actions page, a workflow called RSpec sholud run automatically
-* If you sync your travis-ci account and github account, a travis-ci build test should run as well
+* If you sync your travis-ci account and github account, a travis-ci build test should run as well 
