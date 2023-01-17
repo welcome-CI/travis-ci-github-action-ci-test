@@ -33,7 +33,7 @@ jobs:
         key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
           ${{ runner.os }}-gem-
-    - name: Cache node modules
+    - name: Cach node modules
       uses: actions/cache@v2
       with:
         path: node_modules
@@ -53,5 +53,5 @@ jobs:
       run: |
         bundle exec rails db:create
         bundle exec rails db:schema:load
-    - name: Run tests
+    - name: Run rspec tests
       run: bundle exec rspec
